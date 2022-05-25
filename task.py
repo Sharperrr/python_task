@@ -33,6 +33,7 @@ def find_maximum_distance(
         max = number_of_cities - 1 - cities_with_train_station[len(cities_with_train_station) - 1] if (number_of_cities - 1 - cities_with_train_station[len(cities_with_train_station) - 1]) > max else max
         return max / 2 if max % 2 == 0 else (max - 1) / 2 # the city in the middle of max distance will be the furthest away from a station in the country, so we divide max by 2
 
+    
 if __name__ == "__main__":
     # These are some of test cases. When evaluating the task, more will be added:
     assert find_maximum_distance(number_of_cities=3, cities_with_train_station=[1]) == 1
